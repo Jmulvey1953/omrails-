@@ -1,3 +1,9 @@
+<% if user_signed_in? %> 
+	<div class="hero-unit">
+  <h1>It's a fucking tea party up in here, welcome to the party!</h1>
+  <p>
+  	<% else %> 
+
 <div class="hero-unit">
   <h1>Welcome to Melissa's Tea Store!</h1>
 <p>
@@ -10,17 +16,12 @@
 <p style="text-align:center;">
 <img alt="eBillity - Time
 Tracking" src="
-http://www.ronmulvey.ca/wp-content/uploads/2013/06/storm-in-a-tea-cup-1.jpg" align="middle" height="335" width="500">
+http://www.ronmulvey.ca/wp-content/uploads/2013/06/storm-in-a-tea-cup-1.jpg" align="right" height="335" width="500">
 </p>
-
-
-
-<p> 
-
-	<%= link_to "Sign Up Meow!!!!", "#", class: "btn btn-primary btn-large" %>
+	<%= link_to "Create a free account meow!!!!", new_user_registration_path, class: "btn btn-primary btn-large" %>
 
 	</p>
 
 	</div>
-</div>
+<% end %>
 
